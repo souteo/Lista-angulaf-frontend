@@ -1,0 +1,23 @@
+<div class="my-5 mx-auto col-3 d-flex flex-column border border-dark" style="min-width:20rem;">
+  <h1 class="main-title">LISTA DE TAREAS</h1>
+  <div class="p-2 mb-3" style="min-height :16rem;">
+    <ul class="list-group list" *ngFor="let task of tasksList">
+      <li [ngClass]="task.tasks_status ? 'done' : 'to-do'" id='task.tasks_id' class="d-flex task">
+        <span class="col-8" [value]="task.tasks_text" name="" id="">
+          {{ task.tasks_text }}
+        </span>
+        <div class="col-4 taskdiv">
+          <input type="checkbox" class="col-1 form-check-input" (click)="updateTask(task.tasks_id, task)"
+            [(ngModel)]="task.tasks_status" />
+          <input type="button" value="Borrar" id="" class="col-3 deleteTask" (click)="deleteTask(task.tasks_id)" />
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="d-flex mt-4 bottom">
+    <input type="text" placeholder=" Ingresá una tarea" class="col-9 main-tf"
+      (keyup.enter)="task.tasks_text===''? notify() : addTask()" [(ngModel)]="task.tasks_text" />
+    <button type="submit" value="Agregar" class="col-3 main-btn"
+      (click)="task.tasks_text===''? notify() : addTask()">Agregar</button>
+  </div>
+</div>
