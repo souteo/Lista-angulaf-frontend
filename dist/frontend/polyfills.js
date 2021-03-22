@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\teito\OneDrive\Desktop\Lista-angular\frontend\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Users\teito\OneDrive\Desktop\frontend\src\polyfills.ts */"hN/g");
 
 
 /***/ }),

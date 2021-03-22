@@ -8,7 +8,7 @@ import { Task } from '../models/Task';
 })
 export class TasksService {
 
-  API_URI = 'http://localhost:3000/tasks';
+  API_URI = 'https://lista-angular-backend.herokuapp.com/tasks';
   constructor(private http: HttpClient) { };
 
     getTasks(){

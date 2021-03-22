@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\teito\OneDrive\Desktop\Lista-angular\frontend\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\teito\OneDrive\Desktop\frontend\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -255,7 +255,7 @@ __webpack_require__.r(__webpack_exports__);
 class TasksService {
     constructor(http) {
         this.http = http;
-        this.API_URI = 'http://localhost:3000/tasks';
+        this.API_URI = 'https://lista-angular-backend.herokuapp.com/tasks';
     }
     ;
     getTasks() {
