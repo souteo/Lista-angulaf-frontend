@@ -55,7 +55,6 @@ export class TasksComponent implements OnInit {
     this.tasksService.updateTask(id, task)
       .subscribe(
         res => {
-          window.location.reload();
         },
         err => console.log(err)
       );
