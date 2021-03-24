@@ -67,11 +67,11 @@
     outline: none;
 }
 
-.main-btn:hover{
+.main-btn:hover,.deleteTask{
     background-color:rgb(150, 63, 63);
 }
 
-.main-btn:active{
+.main-btn:active,.deleteTask{
     background-color:rgb(223, 211, 211);
     transition-delay: 5ms;
 }
