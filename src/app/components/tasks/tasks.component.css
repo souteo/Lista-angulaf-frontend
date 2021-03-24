@@ -57,16 +57,23 @@
 
 .main-btn{
     justify-self: flex-end;
-    background: none;
     border: none;
     color: white;
     background-color:rgb(218, 92, 92);
-    border: none;
 }
 
 .main-btn:focus,.main-tf:focus{
     border:none;
     outline: none;
+}
+
+.main-btn:hover{
+    background-color:rgb(150, 63, 63);
+}
+
+.main-btn:active{
+    background-color:rgb(223, 211, 211);
+    transition-delay: 5ms;
 }
 
 .bottom{
