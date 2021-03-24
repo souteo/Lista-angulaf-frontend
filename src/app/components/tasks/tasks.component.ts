@@ -35,7 +35,8 @@ export class TasksComponent implements OnInit {
     this.tasksService.saveTask(this.task)
       .subscribe(
         res => {
-          window.location.reload();
+          this.ngOnInit();
+          this.task.tasks_text = '';
         },
         err => console.log(err)
       );
@@ -64,7 +65,7 @@ export class TasksComponent implements OnInit {
     this.tasksService.deleteTask(id)
       .subscribe(
         res => {
-          window.location.reload();
+          this.ngOnInit();
         },
         err => console.log(err)
       );;
